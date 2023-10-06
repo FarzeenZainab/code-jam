@@ -16,12 +16,14 @@ let minSum = 0;
 let maxSum = 0;
 
 let arr = [7, 69, 2, 221, 8974];
+arr.sort((a, b) => a - b);
 
 for (i = 0; i < 4; i++) {
   minSum = minSum + arr[i];
 }
 for (i = 1; i < 5; i++) {
   maxSum = maxSum + arr[i];
+  console.log(arr[i]);
 }
 
 console.log(minSum, maxSum);
